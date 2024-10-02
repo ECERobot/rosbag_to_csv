@@ -80,7 +80,7 @@ def bag_to_csv(options, fname):
                 stream = open(
                     format_csv_filename(
                         options.output_file_format,
-                        fname[fname.rfind('/'): -4] + topic),
+                        fname[fname.rfind('/'): -4] + "-" + topic),
                     'w')
                 streamdict[topic] = stream
                 # header
